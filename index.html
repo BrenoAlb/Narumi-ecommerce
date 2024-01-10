@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Narumi Inoue" content="Artes!">
+    <script src="js/database.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="LogoNarumi2favicon.png" type="image/x-icon">
+    <title>Narumi Inoue</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="LogoNarumi2.PNG" alt="Weartake">
+                </a>
+            </div>
+            <nav class="menu">
+                <button>Todos</button>
+                <button>2018</button>
+                <button>2019</button>
+                <button>2020</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-produtos container">
+
+        <main class="vitrine">
+            <ul class="lista-vitrine">
+            </ul>
+        </main>
+
+
+        <aside class="pesquisa-carrinho">
+            <section class="area-pesquisa">
+                <input type="text" name="pesquisa" id="input-text" placeholder="Digite aqui sua pesquisa">
+                <button id="btn-pesquisa">Pesquisar</button>
+            </section>
+
+            <section class="carrinho-compras">
+                <div class="carrinho-compras-title">
+                    <h3>Carrinho de compras</h3>
+                </div>
+
+                <section class="carrinho-compras-produtos">
+                    <div class="carrinho-vazio-text">
+                        <span>Carrinho vázio</span>
+                        <span>Adicione itens</span>
+                    </div>
+                    <ul class="lista-carrinho">  
+                      
+                    </ul>
+                </section>
+            </section>
+
+            <section class="quantidade-preco esconder">
+                <div class="quantidade">
+                    <span>Quantidade</span>
+                    <span id="quantidade-produtos"></span>
+                </div>
+                <div class="preco">
+                    <span>Total</span>
+                    <span id="total-produtos"></span>
+                </div>
+            </section>
+            <div class="modalContainer">
+                <div class="modalOpen">
+                <button class="modalClose">
+                    x
+                </button>
+                <figure>
+                    <img class="imagemModal" src="./img/imersão.jpg" alt="Imagem modal">
+                    <figcaption hidden="true"></figcaption>
+                </figure>
+                </div>
+            </div>
+        </aside>
+        
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
